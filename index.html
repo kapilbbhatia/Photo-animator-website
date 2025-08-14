@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Animator</title>
+  <script src="https://unpkg.com/fabric@5.4.0/dist/fabric.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection@latest"></script>
+</head>
+<body>
+  <input type="file" id="imageUpload" accept="image/*">
+  <button id="segment">Separate Character (for Complex BG)</button>
+  <button id="addPins">Add Auto Pins (Frames)</button>
+  <button id="addKeyframe">Add Keyframe</button>
+  <button id="play">Play Animation</button>
+  <button id="record">Record & Export Video</button>
+  <canvas id="canvas" width="800" height="600" style="border:1px solid black;"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
